@@ -10,70 +10,70 @@ export default function Authors() {
                 'https://imgnew.outlookindia.com/public/uploads/gallery/20140522/ruskin_bond_20140602.jpg',
         },
         {
-            name: 'Ruskin Bond',
-            book: 'Roads To Mussoorie',
+            name: 'Amish Tripathi',
+            book: 'The Immortals of Meluha',
             imageUrl:
-                'https://imgnew.outlookindia.com/public/uploads/gallery/20140522/ruskin_bond_20140602.jpg',
+                'https://wikibio.in/wp-content/uploads/2021/12/Amish-Tripathi.jpg',
         },
         {
-            name: 'Ruskin Bond',
-            book: 'Roads To Mussoorie',
+            name: 'Dan Brown',
+            book: 'Da Vinci Code',
             imageUrl:
-                'https://imgnew.outlookindia.com/public/uploads/gallery/20140522/ruskin_bond_20140602.jpg',
+                'https://i.guim.co.uk/img/media/adb81d8dde35e9acdbb37a6d39c2725ba01c5379/328_278_4497_2698/master/4497.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=f6d97defc0bc3a3ea7f081f2b440374f',
         },
         {
-            name: 'Ruskin Bond',
-            book: 'Roads To Mussoorie',
+            name: 'Chetan Bhagat',
+            book: 'Five Point Someone',
             imageUrl:
-                'https://imgnew.outlookindia.com/public/uploads/gallery/20140522/ruskin_bond_20140602.jpg',
+                'https://static.abplive.com/wp-content/uploads/2015/10/26122149/chetan-bhagat-new.jpg',
         },
         {
-            name: 'Ruskin Bond',
-            book: 'Roads To Mussoorie',
+            name: 'J.K.Rowling',
+            book: "Harry Potter and the Philosopher's Stone",
             imageUrl:
-                'https://imgnew.outlookindia.com/public/uploads/gallery/20140522/ruskin_bond_20140602.jpg',
+                'https://hachette.imgix.net/authors/58502.jpg?auto=compress&w=440',
         },
         {
-            name: 'Ruskin Bond',
-            book: 'Roads To Mussoorie',
+            name: 'Ernest Hemingway',
+            book: 'The Old Man and the Sea',
             imageUrl:
-                'https://imgnew.outlookindia.com/public/uploads/gallery/20140522/ruskin_bond_20140602.jpg',
+                'https://ricardonudelman.com/wp-content/uploads/2021/07/ernest-hemingway.jpg',
         },
         {
-            name: 'Ruskin Bond',
-            book: 'Roads To Mussoorie',
+            name: 'Rick Riordan',
+            book: 'The Lost Hero',
             imageUrl:
-                'https://imgnew.outlookindia.com/public/uploads/gallery/20140522/ruskin_bond_20140602.jpg',
+                'https://rickriordan.com/content/uploads/2020/10/rick.jpg',
         },
         {
-            name: 'Ruskin Bond',
-            book: 'Roads To Mussoorie',
+            name: 'Stephen King',
+            book: 'Six Scary Stories',
             imageUrl:
-                'https://imgnew.outlookindia.com/public/uploads/gallery/20140522/ruskin_bond_20140602.jpg',
+                'https://static.tvtropes.org/pmwiki/pub/images/king_8.png',
         },
         {
-            name: 'Ruskin Bond',
-            book: 'Roads To Mussoorie',
+            name: 'Arundhati Roy',
+            book: 'The God of Small Things',
             imageUrl:
-                'https://imgnew.outlookindia.com/public/uploads/gallery/20140522/ruskin_bond_20140602.jpg',
+                'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Arundhati_Roy_W.jpg/1200px-Arundhati_Roy_W.jpg',
         },
         {
-            name: 'Ruskin Bond',
-            book: 'Roads To Mussoorie',
+            name: 'R. K. Narayan',
+            book: 'Malgudi Days',
             imageUrl:
-                'https://imgnew.outlookindia.com/public/uploads/gallery/20140522/ruskin_bond_20140602.jpg',
+                'https://i.pinimg.com/originals/c8/02/94/c802946076018fc9a2976009a48a6e86.jpg',
         },
         {
-            name: 'Ruskin Bond',
-            book: 'Roads To Mussoorie',
+            name: 'Armando Lucas Correa',
+            book: "The Daughter's Tale",
             imageUrl:
-                'https://imgnew.outlookindia.com/public/uploads/gallery/20140522/ruskin_bond_20140602.jpg',
+                'https://images-na.ssl-images-amazon.com/images/S/amzn-author-media-prod/rdmn1rhddc0ddd5gmnclp6iu81.jpg',
         },
         {
-            name: 'Ruskin Bond',
-            book: 'Roads To Mussoorie',
+            name: 'Martha McPhee',
+            book: 'Gorgeous Lies',
             imageUrl:
-                'https://imgnew.outlookindia.com/public/uploads/gallery/20140522/ruskin_bond_20140602.jpg',
+                'https://secure.gravatar.com/avatar/4d5810bf8ad912edc7d4dfdc9c2d8a8e?s=240&d=identicon&r=g',
         },
         // More people...
     ]
