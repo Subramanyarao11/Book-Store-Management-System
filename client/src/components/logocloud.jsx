@@ -1,7 +1,7 @@
 export default function Example() {
     return (
         <>
-            <div className="mx-auto pt-4 max-w-2xl text-center">
+            <div id="publishers" className="mx-auto pt-4 max-w-2xl text-center">
                 <h2
                     id="testimonials-title"
                     className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl"

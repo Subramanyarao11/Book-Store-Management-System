@@ -82,7 +82,7 @@ export default function Authors() {
             {/* <div className="relative px-4"> */}
             {/* <img src={backgroundImage} className="absolute top-0 left-0 h-image flex-no-shrink flex -mt-2 z-0" /> */}
             {/* Authors grid */}
-            <div className="relative max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-6">
+            <div id="authors" className="relative max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-6">
                 <div className="space-y-8 sm:space-y-12">
                     {/* Title */}
                     <h1 className="mx-auto  max-w-4xl font-display text-4xl font-medium tracking-tight text-slate-900 sm:text-4xl">

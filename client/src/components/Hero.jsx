@@ -17,22 +17,22 @@ export default function Hero() {
                             <div className="flex items-center">
                                 <ul className={menu ? "top-100 top-0 p-2 border-r bg-white absolute rounded left-0 right-0 shadow mt-16 md:mt-16" : "hidden p-2 border-r bg-white absolute rounded top-0 left-0 right-0 shadow mt-16 md:mt-16"}>
                                     <li className="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
-                                        <a href="#">
+                                        <a href="#books">
                                             <span className="ml-2 font-bold">Latest Books</span>
                                         </a>
                                     </li>
                                     <li className="flex flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center">
-                                        <a href="#">
+                                        <a href="#authors">
                                             <span className="ml-2 font-bold">Authors</span>
                                         </a>
                                     </li>
                                     <li className="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
-                                        <a href="#">
-                                            <span className="ml-2 font-bold">Services</span>
+                                        <a href="#publishers">
+                                            <span className="ml-2 font-bold">Publishers</span>
                                         </a>
                                     </li>
                                     <li className="flex flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center">
-                                        <a href="#">
+                                        <a href="#footer">
                                             <span className="ml-2 font-bold">About Us</span>
                                         </a>
                                     </li>
@@ -64,16 +64,16 @@ export default function Hero() {
                             <div className="flex items-center justify-end">
                                 <ul className="text-gray-800 flex items-center leading-none">
                                     <li>
-                                        <a href="#">Latest Books</a>
+                                        <a href="#books">Latest Books</a>
                                     </li>
                                     <li className="ml-4">
-                                        <a href="#">Authors</a>
+                                        <a href="#authors">Authors</a>
                                     </li>
                                     <li className="ml-4">
-                                        <a href="#">Services</a>
+                                        <a href="#publishers">Publishers</a>
                                     </li>
                                     <li className="ml-4">
-                                        <a href="#">About Us</a>
+                                        <a href="#footer">About Us</a>
                                     </li>
                                 </ul>
                                 <div className="pl-40">
