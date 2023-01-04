@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-scroll'
 
 export default function Hero() {
 
@@ -17,24 +18,24 @@ export default function Hero() {
                             <div className="flex items-center">
                                 <ul className={menu ? "top-100 top-0 p-2 border-r bg-white absolute rounded left-0 right-0 shadow mt-16 md:mt-16" : "hidden p-2 border-r bg-white absolute rounded top-0 left-0 right-0 shadow mt-16 md:mt-16"}>
                                     <li className="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
-                                        <a href="#books">
+                                        <Link className='cursor-pointer' to="books" spy={true} smooth={true} offset={50} duration={500}>
                                             <span className="ml-2 font-bold">Latest Books</span>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="flex flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center">
-                                        <a href="#authors">
+                                        <Link className='cursor-pointer' to="authors" spy={true} smooth={true} offset={50} duration={800}>
                                             <span className="ml-2 font-bold">Authors</span>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
-                                        <a href="#publishers">
+                                        <Link className='cursor-pointer' to="authors" spy={true} smooth={true} offset={50} duration={800}>
                                             <span className="ml-2 font-bold">Publishers</span>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="flex flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center">
-                                        <a href="#footer">
+                                        <Link className='cursor-pointer' to="authors" spy={true} smooth={true} offset={50} duration={800}>
                                             <span className="ml-2 font-bold">About Us</span>
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                                 <div className="xl:hidden">
@@ -54,7 +55,7 @@ export default function Hero() {
                             </div>
                         </div>
                     </nav>
-                    <nav className="hidden relative z-10 w-full lg:flex justify-between items-center px-6 pt-6">
+                    <nav className="hidden relative z-10 w-full lg:flex justify-between items-center px-6 pt-4">
                         <div className="w-1/6">
                             <a href="#">
                                 <img src="https://cdn.tuk.dev/assets/templates/weCare/logo-blue.png" />
@@ -64,16 +65,24 @@ export default function Hero() {
                             <div className="flex items-center justify-end">
                                 <ul className="text-gray-800 flex items-center leading-none">
                                     <li>
-                                        <a href="#books">Latest Books</a>
+                                        <Link className='cursor-pointer' to="books" spy={true} smooth={true} offset={50} duration={500}>
+                                            Latest Books
+                                        </Link>
                                     </li>
                                     <li className="ml-4">
-                                        <a href="#authors">Authors</a>
+                                        <Link className='cursor-pointer' to="authors" spy={true} smooth={true} offset={-30} duration={800}>
+                                            Authors
+                                        </Link>
                                     </li>
                                     <li className="ml-4">
-                                        <a href="#publishers">Publishers</a>
+                                        <Link className='cursor-pointer' to="publishers" spy={true} smooth={true} offset={-100} duration={700}>
+                                            Publishers
+                                        </Link>
                                     </li>
                                     <li className="ml-4">
-                                        <a href="#footer">About Us</a>
+                                        <Link className='cursor-pointer' to="footer" spy={true} smooth={true} offset={50} duration={1000}>
+                                            About Us
+                                        </Link>
                                     </li>
                                 </ul>
                                 <div className="pl-40">
