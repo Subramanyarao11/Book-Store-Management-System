@@ -1,11 +1,16 @@
 import React, { useState } from 'react'
 import { Link } from 'react-scroll'
+import { useAuth0 } from "@auth0/auth0-react";
+import Logo from '../assets/logo.png'
+import MobileLogo from '../assets/mobile.png'
 
 export default function Hero() {
-
+    const { loginWithRedirect } = useAuth0();
     const [menu, setMenu] = useState(false);
+    // console.log(window.location.pathname)
 
     return (
+        <>
         <div>
             <section>
                 <div className="w-full relative px-6 xl:px-0">
@@ -13,7 +18,8 @@ export default function Hero() {
                     <nav className="lg:hidden relative z-40">
                         <div className="flex py-6 justify-between items-center px-4">
                             <div>
-                                <img className="w-24" src="https://cdn.tuk.dev/assets/templates/weCare/logo-blue.png" />
+                                {/* <img className="w-24" src="https://cdn.tuk.dev/assets/templates/weCare/logo-blue.png" /> */}
+                                <img className="w-24" src={MobileLogo} />
                             </div>
                             <div className="flex items-center">
                                 <ul className={menu ? "top-100 top-0 p-2 border-r bg-white absolute rounded left-0 right-0 shadow mt-16 md:mt-16" : "hidden p-2 border-r bg-white absolute rounded top-0 left-0 right-0 shadow mt-16 md:mt-16"}>
@@ -37,18 +43,25 @@ export default function Hero() {
                                             <span className="ml-2 font-bold">About Us</span>
                                         </Link>
                                     </li>
+                                    <li className="flex flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center">
+                                        <button onClick={() => loginWithRedirect({
+                                            appState: {
+                                                returnTo: '/products'
+                                            }
+                                        })} className="bg-indigo-500 text-white px-6 py-2.5 font-semibold rounded focus:outline-none">Login</button>
+                                    </li>
                                 </ul>
                                 <div className="xl:hidden">
-                                    <svg id="open" onClick={() => setMenu(true)} aria-haspopup="true" aria-label="Main Menu" xmlns="http://www.w3.org/2000/svg" className="show-m-menu icon icon-tabler icon-tabler-menu" width={28} height={28} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                    <svg id="open" onClick={() => setMenu(!menu)} aria-haspopup="true" aria-label="Main Menu" xmlns="http://www.w3.org/2000/svg" className="show-m-menu icon icon-tabler icon-tabler-menu cursor-pointer" width={28} height={28} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" />
                                         <line x1={4} y1={8} x2={20} y2={8} />
                                         <line x1={4} y1={16} x2={20} y2={16} />
                                     </svg>
                                     <div id="close" className="hidden close-m-menu" onClick={() => setMenu(false)}>
-                                        <svg aria-label="Close" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                        <svg aria-label="Close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" />
-                                            <line x1={18} y1={6} x2={6} y2={18} />
-                                            <line x1={6} y1={6} x2={18} y2={18} />
+                                            <line x1="18" y1="6" x2="6" y2="6" />
+                                            <line x1="6" y1="6" x2="6" y2="6" />
                                         </svg>
                                     </div>
                                 </div>
@@ -58,7 +71,8 @@ export default function Hero() {
                     <nav className="hidden relative z-10 w-full lg:flex justify-between items-center px-6 pt-4">
                         <div className="w-1/6">
                             <a href="#">
-                                <img src="https://cdn.tuk.dev/assets/templates/weCare/logo-blue.png" />
+                                {/* <img src="https://cdn.tuk.dev/assets/templates/weCare/logo-blue.png" /> */}
+                                <img src={Logo} />
                             </a>
                         </div>
                         <div className="w-5/6">
@@ -86,7 +100,12 @@ export default function Hero() {
                                     </li>
                                 </ul>
                                 <div className="pl-40">
-                                    <button className="bg-indigo-500 text-white px-6 py-2.5 font-semibold rounded focus:outline-none">Login</button>
+                                    <button onClick={() => loginWithRedirect({
+                                            screen_hint: 'signup',
+                                            appState: {
+                                                returnTo: '/products'
+                                            }
+                                        })} className="bg-indigo-500 text-white px-6 py-2.5 font-semibold rounded focus:outline-none">Login</button>
                                 </div>
                             </div>
                         </div>
@@ -161,5 +180,6 @@ export default function Hero() {
                 </div>
             </section>
         </div>
+        </>
     )
 }

@@ -1,3 +1,4 @@
+import React from "react";
 import "../index.css"
 import { useEffect, useState } from "react";
 import book1 from '../assets/Books/book1.jpg';

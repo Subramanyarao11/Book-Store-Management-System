@@ -25,7 +25,7 @@ export default function Authors() {
             name: 'Chetan Bhagat',
             book: 'Five Point Someone',
             imageUrl:
-                'https://static.abplive.com/wp-content/uploads/2015/10/26122149/chetan-bhagat-new.jpg',
+                'https://www.oneindia.com/img/2018/10/chetan-bhagat-1538893883.jpg',
         },
         {
             name: 'J.K.Rowling',
