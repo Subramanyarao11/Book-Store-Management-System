@@ -8,10 +8,13 @@ function App() {
   return (
    <Routes>
         <Route exact path="/" element={<Home/>} />
-        <Route
+        <Route exact path="/products" element={<Products/>} />
+
+        {/* Uncomment this Later */}
+        {/* <Route
         path="/products"
         element={<AuthenticationGuard component={Products} />}
-      />
+      /> */}
     </Routes>
   )
 }
